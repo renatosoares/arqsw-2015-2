@@ -1,6 +1,7 @@
 package br.ifrn.ssaac.business.userbi;
 
 import br.ifrn.ssaac.business.model.Student;
+import br.ifrn.ssaac.business.model.Evaluator;;
 import br.ifrn.ssaac.persistence.dao.UserDAO;
 import br.ifrn.ssaac.persistence.dao.UserDAOImp;
 
@@ -14,5 +15,9 @@ public class UserBIImp implements UserBI {
 	@Override
 	public void addStudentAuthor(Student student) {
 		dao.addStudent(student);
+	}
+	@Override
+	public void addEvaluatorAuthor(Evaluator evaluator) {
+		dao.addEvaluator(evaluator);
 	}
 }
